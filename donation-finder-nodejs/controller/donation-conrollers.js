@@ -1,8 +1,12 @@
 const Donation = require('../models/donation');
 const mongoose = require('mongoose');
 
+
+const getName = (req, res) => {
+    res.json(200);
+}
 const setName = (req, res) => {
-    let name = "Rotem";
+    let name = req.params.name;
     const createDonation = new Donation({
         name
     });
@@ -14,4 +18,5 @@ const setName = (req, res) => {
     })
 };
 
+exports.getName = getName;
 exports.setName = setName;
