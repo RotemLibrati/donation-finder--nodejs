@@ -2,6 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require("mongoose");
 const donationRoutes = require('./routes/donation-routers');
+require('dotenv').config();
+const HttpError = require('./models/http-error');
 
 const app = express();
 app.use(bodyParser.json());
@@ -14,14 +16,24 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use('api/donation', donationRoutes)
+app.use('/api/donation', donationRoutes);
+app.use((req, res, next) => {
+    const error = new HttpError("Could not find this route.", 404);
+    throw error;
+});
+
+app.use((error, req, res, next) => {
+    if (res.headerSent) {
+        return next(error);
+    }
+    res.status(error.code || 500)
+    res.json({ message: error.message || 'An unknown error' })
+});
 
 mongoose
-    .connect(`mongodb+srv://manu:Rotem889@youtube-articles-api.rjqtk.mongodb.net/mern?retryWrites=true&w=majority`)
+    .connect(`mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@article-api.oqplf.mongodb.net/DonationFinder?retryWrites=true&w=majority`)
     .then(() => {
         app.listen(5000);
-        console.log(`${process.env.MONGO_USERNAME}`)
-        //process.env.MONGO_USERNAME
     })
     .catch(error => {
         console.log(error);
