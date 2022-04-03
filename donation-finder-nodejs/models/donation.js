@@ -6,4 +6,4 @@ const donationSchema = new Schema({
     name: { type: String, required: true }
 });
 
-module.exports = mongoose.model("Donation", donationSchema);
+module.exports = mongoose.model("donations", donationSchema);
