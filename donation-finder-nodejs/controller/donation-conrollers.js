@@ -6,12 +6,9 @@ const getName = (req, res) => {
     res.json(200);
 }
 const setName = (req, res) => {
-    let name = req.params.name;
-    const createDonation = new Donation({
-        name
-    });
+    const createDonation = new Donation( req.body.donation );
     createDonation.save().then(() => {
-        res.status(200).json({name})
+        res.status(200).json(req.body.donation)
     })
     .catch((error) => {
         res.status(500).json({error});
