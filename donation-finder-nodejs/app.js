@@ -35,11 +35,10 @@ app.use((error, req, res, next) => {
 });
 
 mongoose
-    .connect(`mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@article-api.oqplf.mongodb.net/DonationFinder?retryWrites=true&w=majority`)
+    .connect(`${process.env.MONGO_CONNECT_STRING}`)
     .then(() => {
         app.listen(5000);
     })
     .catch(error => {
-        console.log(error);
         console.log(error);
     });
