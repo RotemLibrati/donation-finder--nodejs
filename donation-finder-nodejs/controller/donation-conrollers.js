@@ -25,12 +25,15 @@ const setNewDonation = async (req, res, next) => {
     if (!errors.isEmpty()) {
         return next(new HttpError('Invalid inputs passed, please check your data', 422));
     }
-    const { creator, description, typeDonation, location } = req.body.donation;
+    const { creator, description, typeDonation, location, website, organization, phone } = req.body.donation;
     const createDonation = new Donation({
         creator,
         description,
         typeDonation,
-        location
+        location,
+        website,
+        organization,
+        phone
     });
     try {
         await createDonation.save();
