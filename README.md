@@ -8,7 +8,7 @@
   <img align="center"  alt="Watch the video" width="500px" src="./assets/DonatioFinder.jpg" />
 </a>
 
--
+---
 
 ### Backend Development:
 
