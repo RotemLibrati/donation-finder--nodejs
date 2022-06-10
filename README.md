@@ -13,10 +13,19 @@
 <a href='https://github.com/RotemLibrati/donation-finder-nodejs.git'>
     <img alt="Backend GitHub" src="https://img.shields.io/badge/Backend%20GitHub-171515?style=for-the-badge&logo=github&logoColor=white" />
 </a>
+
+#### Technologies:
+
 <div>
   <img alt="Node.js" src="https://img.shields.io/badge/Node.js-68A063?style=for-the-badge&logo=node.js&logoColor=white" />
   <img alt="Express.js" src="https://img.shields.io/badge/Express-363636?style=for-the-badge&logo=Express&logoColor=white" />
   <img alt="MongoDB" src="https://img.shields.io/badge/MongoDB-3FA037?style=for-the-badge&logo=mongodb&logoColor=white" />
+</div>
+
+#### Programming Languages:
+
+<div>
+<img alt="Java Script" src="https://img.shields.io/badge/Java%20Script-f7df1e?style=for-the-badge&logo=javascript&logoColor=white" />
 </div>
 
 ---
