@@ -53,4 +53,4 @@
 
 ### Architecture:
 
-<img align="center"  alt="Watch the video" width="500px" src="./assets/arc.jpg" />
+<img align="center"  alt="Watch the video" width="500px" src="./assets/arc.png" />
