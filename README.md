@@ -8,6 +8,8 @@
   <img align="center"  alt="Watch the video" width="500px" src="./assets/DonatioFinder.jpg" />
 </a>
 
+-
+
 ### Backend Development:
 
 <a href='https://github.com/RotemLibrati/donation-finder-nodejs.git'>
@@ -50,6 +52,8 @@
 <img alt="HTML" src="https://img.shields.io/badge/HTML-e34c26?style=for-the-badge&logo=html5&logoColor=white" />
 <img alt="CSS" src="https://img.shields.io/badge/CSS-264de4?style=for-the-badge&logo=css3&logoColor=white" />
 </div>
+
+---
 
 ### Architecture:
 
