@@ -19,17 +19,22 @@
   <img alt="MongoDB" src="https://img.shields.io/badge/MongoDB-3FA037?style=for-the-badge&logo=mongodb&logoColor=white" />
 </div>
 
+---
+
 ### Frontend Development:
 
 <a href='https://github.com/RotemLibrati/donation-finder-react.git'>
     <img alt="Frontend GitHub" src="https://img.shields.io/badge/Frontend%20GitHub-171515?style=for-the-badge&logo=github&logoColor=white" />
 </a>
+
+#### Technologies:
+
 <div>
   <img alt="React" src="https://img.shields.io/badge/react-61DBFB?style=for-the-badge&logo=react&logoColor=white" />
   <img alt="Google API" src="https://img.shields.io/badge/google%20api-red?style=for-the-badge&logo=google&logoColor=white" />
 </div>
 
-### Programming Languages:
+#### Programming Languages:
 
 <div>
 <img alt="Java Script" src="https://img.shields.io/badge/Java%20Script-f7df1e?style=for-the-badge&logo=javascript&logoColor=white" />
